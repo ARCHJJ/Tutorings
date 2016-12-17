@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace Tutoring
 {
-    public partial class apply_tutor : System.Web.UI.Page
+    public partial class confirm_tutor : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,15 +28,12 @@ namespace Tutoring
             try
             {
                 conn.Open();
-                comm.CommandText = "insert into A_튜터신청현황 (강좌번호, 튜터학번, 확정여부, 인덱스, 강좌명, 학년도, 학기) values (:no, " + Session["id"] + ", 0, SEQ1.nextval, :name, :year, :semester)";
-                comm.Parameters.AddWithValue("no", row.Cells[0].Text);
-                comm.Parameters.AddWithValue("name", row.Cells[1].Text);
-                comm.Parameters.AddWithValue("year", row.Cells[2].Text);
-                comm.Parameters.AddWithValue("semester", row.Cells[3].Text);
+                comm.CommandText = "update A_튜터신청현황 set 확정여부=1 where 인덱스=:index";
+                comm.Parameters.AddWithValue("index", row.Cells[0].Text);
                 Debug.WriteLine(comm.CommandText);
                 int odr = comm.ExecuteNonQuery();
 
-                Response.Redirect(string.Format("home.aspx"));
+                Response.Redirect(string.Format("home_professor.aspx"));
                 Debug.WriteLine("성공");
             }
 
