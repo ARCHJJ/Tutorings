@@ -23,11 +23,14 @@ namespace Tutoring
             OracleCommand comm = new OracleCommand();
             comm.Connection = conn;
 
+            GridViewRow row = GridView1.SelectedRow;
+
             try
             {
                 conn.Open();
-                comm.CommandText = "insert into A_튜터신청현황 (강좌번호, 튜터학번, 확정여부, 인덱스) values (#no, " + Session["id"] + ", 0, SEQ1.nextval";
-                //comm.Parameters.AddWithValue("@no", GridView1.DataKeys[e.].Value);
+                comm.CommandText = "insert into A_튜터신청현황 (강좌번호, 튜터학번, 확정여부, 인덱스) values (:no, " + Session["id"] + ", 0, SEQ1.nextval)";
+                comm.Parameters.AddWithValue("no", row.Cells[0].Text);
+                Debug.WriteLine(comm.CommandText);
                 int odr = comm.ExecuteNonQuery();
 
                 Response.Redirect(string.Format("home.aspx"));
