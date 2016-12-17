@@ -44,10 +44,19 @@ namespace Tutoring
                         if (pass.Equals(pw))
                         {
                             Session["id"] = id;
+                            Session["year"] = 2016;
+                            Session["semester"] = 2;
 
                             //Name = Context.Session.GetString("Name"),
+                            if (RadioButtonList1.SelectedIndex == 0)
+                            {
+                                Response.Redirect(string.Format("home.aspx"));
+                            }
+                            else
+                            {
+                                Response.Redirect(string.Format("home_professor.aspx"));
 
-                            Response.Redirect(string.Format("home.aspx"));
+                            }
                         }
                         else
                         {
