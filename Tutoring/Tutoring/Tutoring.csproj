@@ -95,6 +95,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="apply_state.aspx" />
     <Content Include="Choice_TIme.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -117,6 +118,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="apply_state.aspx.cs">
+      <DependentUpon>apply_state.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="apply_state.aspx.designer.cs">
+      <DependentUpon>apply_state.aspx</DependentUpon>
+    </Compile>
     <Compile Include="apply_tutor.aspx.cs">
       <DependentUpon>apply_tutor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

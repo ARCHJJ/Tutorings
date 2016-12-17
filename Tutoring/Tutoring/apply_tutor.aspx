@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Height="253px" style="margin-bottom: 0px" Width="769px">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Height="253px" style="margin-bottom: 0px" Width="769px">
     <Columns>
         <asp:BoundField DataField="강좌번호" HeaderText="강좌번호" SortExpression="강좌번호" />
         <asp:BoundField DataField="교과목명" HeaderText="교과목명" SortExpression="교과목명" />

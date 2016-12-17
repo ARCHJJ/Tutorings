@@ -28,8 +28,9 @@ namespace Tutoring
             try
             {
                 conn.Open();
-                comm.CommandText = "insert into A_튜터신청현황 (강좌번호, 튜터학번, 확정여부, 인덱스) values (:no, " + Session["id"] + ", 0, SEQ1.nextval)";
+                comm.CommandText = "insert into A_튜터신청현황 (강좌번호, 튜터학번, 확정여부, 인덱스, 강좌명) values (:no, " + Session["id"] + ", 0, SEQ1.nextval, :name)";
                 comm.Parameters.AddWithValue("no", row.Cells[0].Text);
+                comm.Parameters.AddWithValue("name", row.Cells[1].Text);
                 Debug.WriteLine(comm.CommandText);
                 int odr = comm.ExecuteNonQuery();
 

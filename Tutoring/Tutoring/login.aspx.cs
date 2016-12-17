@@ -27,7 +27,14 @@ namespace Tutoring
             try
             {
                 conn.Open();
-                comm.CommandText = "select passwd from A_학생 where id='" + id + "'";
+                if (RadioButtonList1.SelectedIndex == 0)
+                {
+                    comm.CommandText = "select passwd from A_학생 where id='" + id + "'";
+                }
+                else
+                {
+                    comm.CommandText = "select passwd from A_교수 where id='" + id + "'";
+                }
                 OracleDataReader odr = comm.ExecuteReader();
                 if (odr.HasRows)
                 {
