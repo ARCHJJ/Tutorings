@@ -7,7 +7,7 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace Tutoring {
+namespace Tutoring.professor {
     
     
     public partial class Site2 {

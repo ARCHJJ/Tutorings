@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Tutoring
+namespace Tutoring.professor
 {
-    public partial class Site2 : System.Web.UI.MasterPage
+    public partial class tutor_activity : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
