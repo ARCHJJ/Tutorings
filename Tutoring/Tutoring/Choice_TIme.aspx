@@ -16,6 +16,4 @@
         </Columns>
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT a.NAME, b.튜터과목번호, b.강좌명, b.시작시간, b.종료시간, b.상담장소, b.가능인원, b.현재신청인원 FROM &quot;A_튜터신청현황&quot; c, &quot;A_시간예약뷰&quot; b, &quot;A_학생&quot; a WHERE c.인덱스 = b.튜터과목번호 AND c.튜터학번 = a.ID"></asp:SqlDataSource>
-    <asp:Label ID="Label1" runat="server" Text="시작시간"></asp:Label>
-    <asp:TextBox ID="StartTime" runat="server"></asp:TextBox>
     </asp:Content>
