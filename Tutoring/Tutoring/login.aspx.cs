@@ -50,11 +50,11 @@ namespace Tutoring
                             //Name = Context.Session.GetString("Name"),
                             if (RadioButtonList1.SelectedIndex == 0)
                             {
-                                Response.Redirect(string.Format("home.aspx"));
+                                Response.Redirect(string.Format("student/home.aspx"));
                             }
                             else
                             {
-                                Response.Redirect(string.Format("home_professor.aspx"));
+                                Response.Redirect(string.Format("professor/home_professor.aspx"));
 
                             }
                         }

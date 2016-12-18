@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Tutoring
+namespace Tutoring.student
 {
     public partial class apply_tutor : System.Web.UI.Page
     {

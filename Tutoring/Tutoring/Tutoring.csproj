@@ -95,7 +95,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="apply_state.aspx" />
+    <Content Include="student\apply_state.aspx" />
     <Content Include="Choice_TIme.aspx" />
     <Content Include="professor\confirm_tutor.aspx" />
     <Content Include="professor\home_professor.aspx" />
@@ -105,7 +105,7 @@
     </Content>
     <Content Include="professor\tutor_activity.aspx" />
     <Content Include="register.aspx" />
-    <Content Include="Site1.Master" />
+    <Content Include="student\Site1.Master" />
     <Content Include="professor\Site2.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -115,27 +115,27 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="apply_tutor.aspx" />
-    <Content Include="home.aspx" />
+    <Content Include="student\apply_tutor.aspx" />
+    <Content Include="student\home.aspx" />
     <Content Include="login.aspx" />
     <Content Include="Time_reservation.aspx" />
     <Content Include="TutorActing.aspx" />
-    <Content Include="update_user.aspx" />
+    <Content Include="student\update_user.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="apply_state.aspx.cs">
+    <Compile Include="student\apply_state.aspx.cs">
       <DependentUpon>apply_state.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="apply_state.aspx.designer.cs">
+    <Compile Include="student\apply_state.aspx.designer.cs">
       <DependentUpon>apply_state.aspx</DependentUpon>
     </Compile>
-    <Compile Include="apply_tutor.aspx.cs">
+    <Compile Include="student\apply_tutor.aspx.cs">
       <DependentUpon>apply_tutor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="apply_tutor.aspx.designer.cs">
+    <Compile Include="student\apply_tutor.aspx.designer.cs">
       <DependentUpon>apply_tutor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Choice_TIme.aspx.cs">
@@ -152,11 +152,11 @@
     <Compile Include="professor\confirm_tutor.aspx.designer.cs">
       <DependentUpon>confirm_tutor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="home.aspx.cs">
+    <Compile Include="student\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.aspx.designer.cs">
+    <Compile Include="student\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="professor\home_professor.aspx.cs">
@@ -188,11 +188,11 @@
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Site1.Master.cs">
+    <Compile Include="student\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site1.Master.designer.cs">
+    <Compile Include="student\Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
     <Compile Include="professor\Site2.Master.cs">
@@ -216,17 +216,16 @@
     <Compile Include="TutorActing.aspx.designer.cs">
       <DependentUpon>TutorActing.aspx</DependentUpon>
     </Compile>
-    <Compile Include="update_user.aspx.cs">
+    <Compile Include="student\update_user.aspx.cs">
       <DependentUpon>update_user.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="update_user.aspx.designer.cs">
+    <Compile Include="student\update_user.aspx.designer.cs">
       <DependentUpon>update_user.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
-    <Folder Include="student\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
