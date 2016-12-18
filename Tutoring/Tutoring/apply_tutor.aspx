@@ -11,7 +11,7 @@
         <asp:BoundField DataField="신청가능평점" HeaderText="신청가능평점" SortExpression="신청가능평점" />
         <asp:BoundField DataField="신청시작" HeaderText="신청시작" SortExpression="신청시작" />
         <asp:BoundField DataField="신청종료" HeaderText="신청종료" SortExpression="신청종료" />
-        <asp:ButtonField ButtonType="Button" CommandName="Cancel" HeaderText="신청" ShowHeader="True" Text="신청" />
+        <asp:ButtonField ButtonType="Button" CommandName="Select" HeaderText="신청" ShowHeader="True" Text="신청" />
     </Columns>
 </asp:GridView>
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT &quot;강좌번호&quot;, &quot;교과목명&quot;, &quot;신청가능평점&quot;, &quot;신청시작&quot;, &quot;신청종료&quot;, &quot;학년도&quot;, &quot;학기&quot; FROM &quot;A_강좌개설정보&quot; WHERE ((&quot;학년도&quot; = :학년도) AND (&quot;학기&quot; = :학기))">

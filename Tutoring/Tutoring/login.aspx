@@ -25,7 +25,8 @@
             <asp:ListItem Value="1">교수</asp:ListItem>
         </asp:RadioButtonList>
         
-    </div>
+        <br />
+        <a href="register.aspx">Sign up</a></div>
     </form>
 </body>
 </html>

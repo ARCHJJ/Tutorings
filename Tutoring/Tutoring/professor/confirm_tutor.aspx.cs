@@ -28,9 +28,10 @@ namespace Tutoring
             try
             {
                 conn.Open();
-                comm.CommandText = "update A_튜터신청현황 set 확정여부=1 where 인덱스=:index";
-                comm.Parameters.AddWithValue("index", row.Cells[0].Text);
+                comm.CommandText = "update A_튜터신청현황 set 확정여부=1 where 인덱스 = :num";
+                comm.Parameters.AddWithValue("num", row.Cells[0].Text);
                 Debug.WriteLine(comm.CommandText);
+            
                 int odr = comm.ExecuteNonQuery();
 
                 Response.Redirect(string.Format("home_professor.aspx"));
