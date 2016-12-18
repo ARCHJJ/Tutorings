@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="student\apply_state.aspx" />
-    <Content Include="Choice_TIme.aspx" />
+    <Content Include="student\Choice_TIme.aspx" />
     <Content Include="professor\confirm_tutor.aspx" />
     <Content Include="professor\home_professor.aspx" />
     <Content Include="packages.config" />
@@ -118,7 +118,7 @@
     <Content Include="student\apply_tutor.aspx" />
     <Content Include="student\home.aspx" />
     <Content Include="login.aspx" />
-    <Content Include="Time_reservation.aspx" />
+    <Content Include="student\Time_reservation.aspx" />
     <Content Include="TutorActing.aspx" />
     <Content Include="student\update_user.aspx" />
     <Content Include="Web.config" />
@@ -138,11 +138,11 @@
     <Compile Include="student\apply_tutor.aspx.designer.cs">
       <DependentUpon>apply_tutor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Choice_TIme.aspx.cs">
+    <Compile Include="student\Choice_TIme.aspx.cs">
       <DependentUpon>Choice_TIme.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Choice_TIme.aspx.designer.cs">
+    <Compile Include="student\Choice_TIme.aspx.designer.cs">
       <DependentUpon>Choice_TIme.aspx</DependentUpon>
     </Compile>
     <Compile Include="professor\confirm_tutor.aspx.cs">
@@ -202,11 +202,11 @@
     <Compile Include="professor\Site2.Master.designer.cs">
       <DependentUpon>Site2.Master</DependentUpon>
     </Compile>
-    <Compile Include="Time_reservation.aspx.cs">
+    <Compile Include="student\Time_reservation.aspx.cs">
       <DependentUpon>Time_reservation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Time_reservation.aspx.designer.cs">
+    <Compile Include="student\Time_reservation.aspx.designer.cs">
       <DependentUpon>Time_reservation.aspx</DependentUpon>
     </Compile>
     <Compile Include="TutorActing.aspx.cs">

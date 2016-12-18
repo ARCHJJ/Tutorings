@@ -7,7 +7,7 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace Tutoring {
+namespace Tutoring.student {
     
     
     public partial class Choice_TIme {
