@@ -15,10 +15,11 @@
         <a href="update_user.aspx">개인정보수정</a>
         <a href="apply_tutor.aspx">튜터지원</a>
         <a href="apply_state.aspx">튜터신청현황</a>
-         <a href="registertime.aspx">튜터시간공지</a>    
-        &nbsp;<a href="Time_reservation.aspx">상담시간예약
-             <a href="cancel_time.aspx">상담시간취소</a> 
-            <a href="tutor_report_to_student.aspx">튜터활동보고</a> 
+        <a href="registertime.aspx">튜터시간공지</a>    
+        <a href="Time_reservation.aspx">상담시간예약
+        <a href="cancel_time.aspx">상담시간취소</a> 
+        <a href="search_student.aspx">튜터링 내용 조회(학생)</a>
+        <a href="search_tutor.aspx">튜터링 내용 조회(튜터)</a>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="로그아웃" />
         </a>&nbsp;<div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

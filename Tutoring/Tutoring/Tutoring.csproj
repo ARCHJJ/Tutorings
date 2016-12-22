@@ -102,6 +102,7 @@
     <Content Include="professor\tutor_evaluate.aspx" />
     <Content Include="student\apply_state.aspx" />
     <Content Include="student\cancel_time.aspx" />
+    <Content Include="student\cancel_time2.aspx" />
     <Content Include="student\Choice_TIme.aspx" />
     <Content Include="professor\confirm_tutor.aspx" />
     <Content Include="professor\home_professor.aspx" />
@@ -113,6 +114,8 @@
     <Content Include="register.aspx" />
     <Content Include="student\estimating.aspx" />
     <Content Include="student\registertime.aspx" />
+    <Content Include="student\search_student.aspx" />
+    <Content Include="student\search_tutor.aspx" />
     <Content Include="student\Site1.Master" />
     <Content Include="professor\Site2.Master" />
     <Content Include="admin\Site3.Master" />
@@ -197,6 +200,12 @@
     <Compile Include="student\cancel_time.aspx.designer.cs">
       <DependentUpon>cancel_time.aspx</DependentUpon>
     </Compile>
+    <Compile Include="student\cancel_time2.aspx.cs">
+      <DependentUpon>cancel_time2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\cancel_time2.aspx.designer.cs">
+      <DependentUpon>cancel_time2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="student\Choice_TIme.aspx.cs">
       <DependentUpon>Choice_TIme.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -260,6 +269,20 @@
     </Compile>
     <Compile Include="student\registertime.aspx.designer.cs">
       <DependentUpon>registertime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\search_student.aspx.cs">
+      <DependentUpon>search_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\search_student.aspx.designer.cs">
+      <DependentUpon>search_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\search_tutor.aspx.cs">
+      <DependentUpon>search_tutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\search_tutor.aspx.designer.cs">
+      <DependentUpon>search_tutor.aspx</DependentUpon>
     </Compile>
     <Compile Include="student\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
