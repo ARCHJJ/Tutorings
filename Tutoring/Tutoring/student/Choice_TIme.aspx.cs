@@ -46,17 +46,18 @@ namespace Tutoring.student
                     }
                     else {                        
                         comm.CommandText = "insert into A_상담시간등록 (신청자학번, 상담장소, 시작시간, 인덱스) values (:ID,:placeL,TO_DATE(:Sdate,'YYYY-MM-DD HH24:MI'),:Snum )";
-                        //comm.CommandText = "insert into A_상담시간등록 (신청자학번, 상담장소, 시작시간, 인덱스) values (" + Session["id"] + ",:placeL,:Sdate,:Snum )"; To_char(b.시작시간, 'YYYY-MM-DD HH24:MI')
-                        // comm.CommandText = "insert into A_튜터신청현황 (강좌번호, 튜터학번, 확정여부, 인덱스, 강좌명) values (:no, " + Session["id"] + ", 0, SEQ1.nextval, :name)";
+                       
                         comm.Parameters.AddWithValue("ID", Session["id"]);
-                        comm.Parameters.AddWithValue("Snum", int.Parse(row.Cells[1].Text));
-                        comm.Parameters.AddWithValue("Sdate", row.Cells[3].Text);
                         comm.Parameters.AddWithValue("placeL", row.Cells[5].Text);
+                        comm.Parameters.AddWithValue("Sdate", row.Cells[3].Text);
+                        comm.Parameters.AddWithValue("Snum", int.Parse(row.Cells[1].Text));
+                        
+                        
                         //comm.Parameters.AddWithValue("StartTime", row.Cells[3].Text);
                         //  comm.CommandText = "insert into A_상담시간등록 (신청자학번, 상담장소, 시작시간, 인덱스) values (" + Session["id"] + ","+ row.Cells[5].Text + ", " + StartTime.Text + ","+ row.Cells[1].Text + ")";
 
-                        Debug.WriteLine(comm.CommandText);
-                        Debug.WriteLine(row.Cells[4].Text);
+                        Debug.WriteLine(row.Cells[3].Text);
+                      // Debug.WriteLine(row.Cells[4].Text);
                         // Debug.WriteLine(row.Cells[5].Text);
                         int ork = comm.ExecuteNonQuery();
                         if (ork == 0)

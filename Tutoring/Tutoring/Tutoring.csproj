@@ -102,6 +102,7 @@
     <Content Include="professor\tutor_evaluate.aspx" />
     <Content Include="student\apply_state.aspx" />
     <Content Include="student\cancel_time.aspx" />
+    <Content Include="student\cancel_time2.aspx" />
     <Content Include="student\Choice_TIme.aspx" />
     <Content Include="professor\confirm_tutor.aspx" />
     <Content Include="professor\home_professor.aspx" />
@@ -131,6 +132,7 @@
     <Content Include="login.aspx" />
     <Content Include="student\Time_reservation.aspx" />
     <Content Include="student\tutor_estimate.aspx" />
+    <Content Include="student\tutor_report_to_students.aspx" />
     <Content Include="TutorActing.aspx" />
     <Content Include="student\update_user.aspx" />
     <Content Include="Web.config" />
@@ -198,6 +200,13 @@
     </Compile>
     <Compile Include="student\cancel_time.aspx.designer.cs">
       <DependentUpon>cancel_time.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\cancel_time2.aspx.cs">
+      <DependentUpon>cancel_time2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\cancel_time2.aspx.designer.cs">
+      <DependentUpon>cancel_time2.aspx</DependentUpon>
     </Compile>
     <Compile Include="student\Choice_TIme.aspx.cs">
       <DependentUpon>Choice_TIme.aspx</DependentUpon>
@@ -304,6 +313,13 @@
     </Compile>
     <Compile Include="student\tutor_estimate.aspx.designer.cs">
       <DependentUpon>tutor_estimate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\tutor_report_to_students.aspx.cs">
+      <DependentUpon>tutor_report_to_students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\tutor_report_to_students.aspx.designer.cs">
+      <DependentUpon>tutor_report_to_students.aspx</DependentUpon>
     </Compile>
     <Compile Include="TutorActing.aspx.cs">
       <DependentUpon>TutorActing.aspx</DependentUpon>
