@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Tutoring.student//예약 취소는 아직 안만듬
+namespace Tutoring.student
 {
     public partial class Choice_TIme : System.Web.UI.Page
     {
@@ -45,10 +45,11 @@ namespace Tutoring.student//예약 취소는 아직 안만듬
                         Page.ClientScript.RegisterStartupScript(typeof(Page), "alert", "<script language=javaScript>alert('이미 등록되었습니다');</script>");
                     }
                     else {                        
-                        comm.CommandText = "insert into A_상담시간등록 (신청자학번, 상담장소, 시작시간, 인덱스) values (" + Session["id"] + ",:placeL,TO_DATE(:Sdate,'YYYY-MM-DD PM HH12:MI:SS'),:Snum )";
-                        //comm.CommandText = "insert into A_상담시간등록 (신청자학번, 상담장소, 시작시간, 인덱스) values (" + Session["id"] + ",:placeL,:Sdate,:Snum )";
+                        comm.CommandText = "insert into A_상담시간등록 (신청자학번, 상담장소, 시작시간, 인덱스) values (:ID,:placeL,TO_DATE(:Sdate,'YYYY-MM-DD HH24:MI'),:Snum )";
+                        //comm.CommandText = "insert into A_상담시간등록 (신청자학번, 상담장소, 시작시간, 인덱스) values (" + Session["id"] + ",:placeL,:Sdate,:Snum )"; To_char(b.시작시간, 'YYYY-MM-DD HH24:MI')
                         // comm.CommandText = "insert into A_튜터신청현황 (강좌번호, 튜터학번, 확정여부, 인덱스, 강좌명) values (:no, " + Session["id"] + ", 0, SEQ1.nextval, :name)";
-                        comm.Parameters.AddWithValue("Snum", row.Cells[1].Text);
+                        comm.Parameters.AddWithValue("ID", Session["id"]);
+                        comm.Parameters.AddWithValue("Snum", int.Parse(row.Cells[1].Text));
                         comm.Parameters.AddWithValue("Sdate", row.Cells[3].Text);
                         comm.Parameters.AddWithValue("placeL", row.Cells[5].Text);
                         //comm.Parameters.AddWithValue("StartTime", row.Cells[3].Text);

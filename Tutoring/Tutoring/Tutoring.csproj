@@ -127,6 +127,7 @@
     <Content Include="student\home.aspx" />
     <Content Include="login.aspx" />
     <Content Include="student\Time_reservation.aspx" />
+    <Content Include="student\tutor_report_to_student.aspx" />
     <Content Include="TutorActing.aspx" />
     <Content Include="student\update_user.aspx" />
     <Content Include="Web.config" />
@@ -272,6 +273,13 @@
     </Compile>
     <Compile Include="student\Time_reservation.aspx.designer.cs">
       <DependentUpon>Time_reservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\tutor_report_to_student.aspx.cs">
+      <DependentUpon>tutor_report_to_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\tutor_report_to_student.aspx.designer.cs">
+      <DependentUpon>tutor_report_to_student.aspx</DependentUpon>
     </Compile>
     <Compile Include="TutorActing.aspx.cs">
       <DependentUpon>TutorActing.aspx</DependentUpon>
