@@ -11,6 +11,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <a href="home_admin.aspx">Home</a>
+        <a href="register_subject.aspx">교과목 등록</a>
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
