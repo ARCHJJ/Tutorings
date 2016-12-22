@@ -7,8 +7,8 @@
             <asp:BoundField DataField="NAME" HeaderText="NAME" SortExpression="NAME" />
             <asp:BoundField DataField="튜터과목번호" HeaderText="튜터과목번호" SortExpression="튜터과목번호" />
             <asp:BoundField DataField="강좌명" HeaderText="강좌명" SortExpression="강좌명" />
-            <asp:BoundField DataField="TO_CHAR(B.시작시간,'YYYY-MM-DDHH24:MI')" HeaderText="시작시간" SortExpression="TO_CHAR(B.시작시간,'YYYY-MM-DDHH24:MI')" />
-            <asp:BoundField DataField="TO_CHAR(B.종료시간,'YYYY-MM-DDHH24:MI')" HeaderText="종료시간" SortExpression="TO_CHAR(B.종료시간,'YYYY-MM-DDHH24:MI')" />
+            <asp:BoundField DataField="TO_CHAR(B.종료시간,'YYYY-MM-DDHH24:MI')" HeaderText="시작시간" SortExpression="시작시간" />
+            <asp:BoundField DataField="TO_CHAR(B.시작시간,'YYYY-MM-DDHH24:MI')" HeaderText="종료시간" SortExpression="종료시간" />
             <asp:BoundField DataField="상담장소" HeaderText="상담장소" SortExpression="상담장소" />
             <asp:BoundField DataField="가능인원" HeaderText="가능인원" SortExpression="가능인원" />
             <asp:BoundField DataField="현재신청인원" HeaderText="현재신청인원" SortExpression="현재신청인원" />

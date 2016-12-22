@@ -27,9 +27,11 @@
     <br />
     <asp:Label ID="Label3" runat="server" Text="시작시간"></asp:Label>
     <asp:TextBox ID="TextBox3" runat="server" ></asp:TextBox>
+    <asp:Label ID="Label6" runat="server" Text="ex) 2016-12-26 15:00"></asp:Label>
     <br />
     <asp:Label ID="Label4" runat="server" Text="종료시간"></asp:Label>
     <asp:TextBox ID="TextBox2" runat="server" ></asp:TextBox>
+    <asp:Label ID="Label7" runat="server" Text="ex) 2016-12-26 17:00"></asp:Label>
     <br />
     <asp:Label ID="Label5" runat="server" Text="취소가능날짜"></asp:Label>
     <asp:DropDownList ID="DropDownList2" runat="server">
