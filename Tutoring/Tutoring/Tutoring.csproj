@@ -109,6 +109,7 @@
     </Content>
     <Content Include="professor\tutor_activity.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="student\registertime.aspx" />
     <Content Include="student\Site1.Master" />
     <Content Include="professor\Site2.Master" />
     <Content Include="admin\Site3.Master" />
@@ -227,6 +228,13 @@
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\registertime.aspx.cs">
+      <DependentUpon>registertime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\registertime.aspx.designer.cs">
+      <DependentUpon>registertime.aspx</DependentUpon>
     </Compile>
     <Compile Include="student\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Tutoring.student
+namespace Tutoring.student//예약 취소는 아직 안만듬
 {
     public partial class Choice_TIme : System.Web.UI.Page
     {
@@ -30,9 +30,10 @@ namespace Tutoring.student
         {
             GridViewRow row = GridView1.SelectedRow;
             // if (GridView1.Rows[i].Cells[6] == GridView1.Rows[i].Cells[7])
-            if (row.Cells[6] == row.Cells[7])
+            if (row.Cells[6].Text.Equals(row.Cells[7].Text))
             {
                 ClientScript.RegisterStartupScript(typeof(Page), "alert", "<script language=javaScript>alert('신청할 수 없습니다');</script>");
+               
             }
             else {
                 OracleConnection conn = new OracleConnection();
