@@ -14,9 +14,10 @@
         <a href="home.aspx">Home</a>
         <a href="update_user.aspx">개인정보수정</a>
         <a href="apply_tutor.aspx">튜터지원</a>
-        <a href="apply_state.aspx">튜터신청 현황</a>
-        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">튜터시간공지</asp:LinkButton>       
-        &nbsp;<a href="Time_reservation.aspx">학생시간예약
+        <a href="apply_state.aspx">튜터신청현황</a>
+         <a href="registertime.aspx">튜터시간공지</a>    
+        &nbsp;<a href="Time_reservation.aspx">상담시간예약
+             <a href="cancel_time.aspx">상담시간취소</a> 
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="로그아웃" />
         </a>&nbsp;<div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
