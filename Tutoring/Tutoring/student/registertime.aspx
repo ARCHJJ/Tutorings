@@ -2,11 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Label ID="Label1" runat="server" Text="상담장소"></asp:Label>
+    <br />
+<asp:Label ID="Label1" runat="server" Text="상담장소"></asp:Label>
     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
     <br />
     <asp:Label ID="Label2" runat="server" Text="가능인원"></asp:Label>
-    <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+    <asp:DropDownList ID="DropDownList1" runat="server">
         <asp:ListItem Value="1">1명</asp:ListItem>
         <asp:ListItem Value="2">2명</asp:ListItem>
         <asp:ListItem Value="3">3명</asp:ListItem>
@@ -25,10 +26,10 @@
     </asp:DropDownList>
     <br />
     <asp:Label ID="Label3" runat="server" Text="시작시간"></asp:Label>
-    <asp:Button ID="Button3" runat="server" Text="시작시간설정" Width="81px" />
+    <asp:TextBox ID="TextBox3" runat="server" ></asp:TextBox>
     <br />
     <asp:Label ID="Label4" runat="server" Text="종료시간"></asp:Label>
-    <asp:Button ID="Button2" runat="server" Text="종료시간설정" Width="81px" />
+    <asp:TextBox ID="TextBox2" runat="server" ></asp:TextBox>
     <br />
     <asp:Label ID="Label5" runat="server" Text="취소가능날짜"></asp:Label>
     <asp:DropDownList ID="DropDownList2" runat="server">

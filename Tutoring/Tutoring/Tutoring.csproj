@@ -96,6 +96,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="student\apply_state.aspx" />
+    <Content Include="student\cancel_time.aspx" />
+    <Content Include="student\cancel_time2.aspx" />
     <Content Include="student\Choice_TIme.aspx" />
     <Content Include="professor\confirm_tutor.aspx" />
     <Content Include="professor\home_professor.aspx" />
@@ -138,6 +140,20 @@
     </Compile>
     <Compile Include="student\apply_tutor.aspx.designer.cs">
       <DependentUpon>apply_tutor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\cancel_time.aspx.cs">
+      <DependentUpon>cancel_time.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\cancel_time.aspx.designer.cs">
+      <DependentUpon>cancel_time.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\cancel_time2.aspx.cs">
+      <DependentUpon>cancel_time2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\cancel_time2.aspx.designer.cs">
+      <DependentUpon>cancel_time2.aspx</DependentUpon>
     </Compile>
     <Compile Include="student\Choice_TIme.aspx.cs">
       <DependentUpon>Choice_TIme.aspx</DependentUpon>
