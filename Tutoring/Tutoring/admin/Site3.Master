@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Tutoring.professor.Site2" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.master.cs" Inherits="Tutoring.admin.Site3" %>
 
 <!DOCTYPE html>
 
@@ -11,13 +11,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <a href="home_professor.aspx">Home</a>
-        <a href="confirm_tutor.aspx">튜터 승인</a>
-        <a href="tutor_activity.aspx">튜터 활동 현황</a>
-        <a href="tutor_evaluate.aspx">튜터 평가하기</a>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="로그아웃" />
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
         </asp:ContentPlaceHolder>
     </div>
     </form>

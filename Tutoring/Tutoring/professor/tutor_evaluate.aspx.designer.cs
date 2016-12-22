@@ -10,7 +10,7 @@
 namespace Tutoring.professor {
     
     
-    public partial class tutor_activity {
+    public partial class tutor_evaluate {
         
         /// <summary>
         /// GridView1 컨트롤입니다.

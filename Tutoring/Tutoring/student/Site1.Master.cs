@@ -19,7 +19,7 @@ namespace Tutoring.student
         {
             Session.Abandon();
             Session.Clear();
-            Response.Redirect(string.Format("login.aspx"));
+            Response.Redirect(string.Format("../login.aspx"));
         }
 
  
