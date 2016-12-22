@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\home_admin.aspx" />
+    <Content Include="admin\register_subject.aspx" />
     <Content Include="professor\activitying.aspx" />
     <Content Include="professor\evaluating.aspx" />
     <Content Include="professor\tutor_evaluate.aspx" />
@@ -109,6 +110,7 @@
     </Content>
     <Content Include="professor\tutor_activity.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="student\estimating.aspx" />
     <Content Include="student\registertime.aspx" />
     <Content Include="student\Site1.Master" />
     <Content Include="professor\Site2.Master" />
@@ -125,6 +127,7 @@
     <Content Include="student\home.aspx" />
     <Content Include="login.aspx" />
     <Content Include="student\Time_reservation.aspx" />
+    <Content Include="student\tutor_estimate.aspx" />
     <Content Include="TutorActing.aspx" />
     <Content Include="student\update_user.aspx" />
     <Content Include="Web.config" />
@@ -136,6 +139,13 @@
     </Compile>
     <Compile Include="admin\home_admin.aspx.designer.cs">
       <DependentUpon>home_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\register_subject.aspx.cs">
+      <DependentUpon>register_subject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\register_subject.aspx.designer.cs">
+      <DependentUpon>register_subject.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\Site3.Master.cs">
       <DependentUpon>Site3.Master</DependentUpon>
@@ -192,6 +202,13 @@
     </Compile>
     <Compile Include="professor\confirm_tutor.aspx.designer.cs">
       <DependentUpon>confirm_tutor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\estimating.aspx.cs">
+      <DependentUpon>estimating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\estimating.aspx.designer.cs">
+      <DependentUpon>estimating.aspx</DependentUpon>
     </Compile>
     <Compile Include="student\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
@@ -256,6 +273,13 @@
     </Compile>
     <Compile Include="student\Time_reservation.aspx.designer.cs">
       <DependentUpon>Time_reservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\tutor_estimate.aspx.cs">
+      <DependentUpon>tutor_estimate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\tutor_estimate.aspx.designer.cs">
+      <DependentUpon>tutor_estimate.aspx</DependentUpon>
     </Compile>
     <Compile Include="TutorActing.aspx.cs">
       <DependentUpon>TutorActing.aspx</DependentUpon>
