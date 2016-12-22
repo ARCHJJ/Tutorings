@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="인덱스" DataSourceID="SqlDataSource1" Height="176px" Width="777px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+    s<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="인덱스" DataSourceID="SqlDataSource1" Height="176px" Width="777px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
     <Columns>
         <asp:BoundField DataField="인덱스" HeaderText="인덱스" ReadOnly="True" SortExpression="인덱스" />
         <asp:BoundField DataField="강좌번호" HeaderText="강좌번호" SortExpression="강좌번호" />
@@ -16,9 +16,17 @@
         <asp:CommandField ButtonType="Button" HeaderText="승인" SelectText="승인" ShowSelectButton="True" />
     </Columns>
 </asp:GridView>
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="select t.인덱스, t.강좌번호, 강좌명, 튜터학번, s.name as 튜터이름,  grade as 튜터평점, 확정여부, t.학년도, t.학기
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="(select t.인덱스, t.강좌번호, t.학년도, t.학기, 강좌명, 튜터학번, s.name as 튜터이름,  grade as 튜터평점, 확정여부
 from A_튜터신청현황 t, A_강좌개설정보 g, A_학생 s
-where t.강좌번호 = g.강좌번호 and t.튜터학번=s.id and 교수id=:pid and g.학년도=:year">
+where t.강좌번호 = g.강좌번호 and t.튜터학번=s.id and 교수id=:pid and g.학년도=:year)
+MINUS
+(select t.인덱스, t.강좌번호, t.학년도, t.학기, 강좌명, 튜터학번, s.name as 튜터이름,  grade as 튜터평점, 확정여부
+from A_튜터신청현황 t, A_강좌개설정보 g, A_학생 s
+where t.강좌번호 = g.강좌번호 and t.튜터학번=s.id and 교수id=:pid and g.학년도=:year and 튜터학번=
+(select 튜터학번 from A_튜터신청현황 
+where 학년도=:year and 확정여부=1 and 튜터학번 in 
+(select 튜터학번 from A_튜터신청현황 t, A_강좌개설정보 g
+where t.강좌번호 = g.강좌번호 and 교수id=:pid and g.학년도=:year)))">
     <SelectParameters>
         <asp:SessionParameter Name="PID" SessionField="id" />
         <asp:FormParameter DefaultValue="2016" FormField="year" Name="year" />

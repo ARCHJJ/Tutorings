@@ -52,10 +52,13 @@ namespace Tutoring
                             {
                                 Response.Redirect(string.Format("student/home.aspx"));
                             }
-                            else
+                            else if(id.Equals("0"))
+                            {
+                                Response.Redirect(string.Format("admin/home_admin.aspx"));
+
+                            }else
                             {
                                 Response.Redirect(string.Format("professor/home_professor.aspx"));
-
                             }
                         }
                         else
@@ -69,7 +72,7 @@ namespace Tutoring
             }
             catch
             {
-                //warning.Text = "젠장";
+                warning.Text = "아이디/비밀번호를 다시 확인해주세요.";
             }
             finally
             {
