@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.OracleClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -29,11 +30,11 @@ namespace Tutoring
                 conn.Open();
                 if (RadioButtonList1.SelectedIndex == 0)
                 {
-                    comm.CommandText = "select passwd from A_학생 where id='" + id + "'";
+                    comm.CommandText = "select passwd, to_char(sysdate,'yyyy') as year,to_char(sysdate,'mm') as month  from A_학생 where id='" + id + "'";
                 }
                 else
                 {
-                    comm.CommandText = "select passwd from A_교수 where id='" + id + "'";
+                    comm.CommandText = "select passwd, to_char(sysdate,'yyyy') as year,to_char(sysdate,'mm') as month from A_교수 where id='" + id + "'";
                 }
                 OracleDataReader odr = comm.ExecuteReader();
                 if (odr.HasRows)
@@ -41,12 +42,20 @@ namespace Tutoring
                     while (odr.Read())
                     {
                         string pass = odr["passwd"].ToString();
+                        int year = Int32.Parse(odr["year"].ToString());
+                        int month = Int32.Parse(odr["month"].ToString());
+                        int semester;
+                        if (month > 8)
+                            semester = 2;
+                        else
+                            semester = 1;
                         if (pass.Equals(pw))
                         {
                             Session["id"] = id;
-                            Session["year"] = 2016;
-                            Session["semester"] = 2;
+                            Session["year"] = year;
+                            Session["semester"] = semester;
 
+                            Debug.WriteLine("debug: "+Session["year"] + "         " +Session["semester"]);
                             //Name = Context.Session.GetString("Name"),
                             if (RadioButtonList1.SelectedIndex == 0)
                             {

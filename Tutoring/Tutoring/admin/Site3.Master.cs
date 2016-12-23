@@ -13,5 +13,13 @@ namespace Tutoring.admin
         {
 
         }
+
+
+        protected void 로그아웃_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Session.Clear();
+            Response.Redirect(string.Format("../login.aspx"));
+        }
     }
 }

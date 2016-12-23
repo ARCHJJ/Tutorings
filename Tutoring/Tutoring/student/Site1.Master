@@ -8,21 +8,26 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body>
+<body id="main">
     <form id="form1" runat="server">
-        <a href="home.aspx">Home</a>
-        <a href="update_user.aspx">개인정보수정</a>
-        <a href="apply_tutor.aspx">튜터지원</a>
-        <a href="apply_state.aspx">튜터신청현황</a>
-        <a href="registertime.aspx">튜터시간공지</a>    
-        <a href="Time_reservation.aspx">상담시간예약</a>
-        <a href="cancel_time.aspx">상담시간취소</a> 
-        <a href="tutor_report_to_students.aspx">튜터활동보고서작성</a> 
-        <a href="search_student.aspx">튜터링 내용 조회(학생)</a>
-        <a href="search_tutor.aspx">튜터링 내용 조회(튜터)</a>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="로그아웃" />
-        &nbsp;<div>
+    <div id="topbody">
+        <a href="home.aspx"><span class="button">Home</span></a>
+        <a href="update_user.aspx"><span class="button">개인정보수정</span></a>
+        <a href="apply_tutor.aspx"><span class="button">튜터지원</span></a>
+        <a href="apply_state.aspx"><span class="button">튜터신청현황</span></a>
+        <a href="registertime.aspx"><span class="button">튜터시간공지</span></a>    
+        <a href="Time_reservation.aspx"><span class="button">상담시간예약</span></a>
+        <a href="cancel_time.aspx"><span class="button">상담시간취소</span></a> 
+        <a href="tutor_report_to_students.aspx"><span class="button">튜터활동보고서작성</span></a> 
+        <a href="tutor_estimate.aspx"><span class="button">튜터평가하기(학생)</span></a> 
+        <a href="search_student.aspx"><span class="button">튜터링 내용 조회(학생)</span></a>
+        <a href="search_tutor.aspx"><span class="button">튜터링 내용 조회(튜터)</span></a>
+        <a href="chat.aspx"><span class="button">chat</span></a>
+        <span id="logout"><asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="로그아웃" /></span>
+    </div>
+    <div id="mainbody">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

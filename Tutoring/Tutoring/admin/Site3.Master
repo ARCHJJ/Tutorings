@@ -8,12 +8,17 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body>
+<body id="main">
     <form id="form1" runat="server">
-        <a href="home_admin.aspx">Home</a>
-        <a href="register_subject.aspx">교과목 등록</a>
-    <div>
+    <div id="topbody">
+        <a href="home_admin.aspx"><span class="button">Home</</a>
+        <a href="register_subject.aspx"><span class="button">교과목 등록</a>
+        <span id="logout"><asp:Button ID="로그아웃" runat="server" OnClick="로그아웃_Click" Text="로그아웃" /><//span>
+        
+    </div>
+    <div id="mainbody">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

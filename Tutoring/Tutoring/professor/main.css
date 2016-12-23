@@ -1,0 +1,13 @@
+﻿body {
+}
+.button{width: 210px; height: 40px; text-align: center; border:2px solid gray; font-size: 20px; margin: 10px 10px 0 0; display: inline-block; line-height: 40px;}
+
+
+#main {background-image: url(../background.jpg); background-size: 100% ; }
+#topbody{background : #48494b; height: 70px;}
+#mainbody{padding : 5% 0 0 5%; width: 100%; height: 900px; background: rgba(245,245,245,0.7);}
+#logout{float: right; margin: 20px 70px 0 0; }
+
+a:link { color: white; text-decoration: none;}
+a:visited { color: white; text-decoration: none;}
+a:hover { color: red; text-decoration: underline;}

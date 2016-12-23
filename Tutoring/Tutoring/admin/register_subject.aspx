@@ -17,18 +17,11 @@
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM &quot;A_강좌개설정보&quot; WHERE &quot;강좌번호&quot; = :original_강좌번호 AND &quot;학년도&quot; = :original_학년도 AND &quot;학기&quot; = :original_학기 AND ((&quot;교과목명&quot; = :original_교과목명) OR (&quot;교과목명&quot; IS NULL AND :original_교과목명 IS NULL)) AND ((&quot;튜터신청가능여부&quot; = :original_튜터신청가능여부) OR (&quot;튜터신청가능여부&quot; IS NULL AND :original_튜터신청가능여부 IS NULL)) AND ((&quot;신청가능학점&quot; = :original_신청가능학점) OR (&quot;신청가능학점&quot; IS NULL AND :original_신청가능학점 IS NULL)) AND ((&quot;신청가능평점&quot; = :original_신청가능평점) OR (&quot;신청가능평점&quot; IS NULL AND :original_신청가능평점 IS NULL)) AND ((&quot;교수ID&quot; = :original_교수ID) OR (&quot;교수ID&quot; IS NULL AND :original_교수ID IS NULL)) AND ((&quot;신청시작&quot; = :original_신청시작) OR (&quot;신청시작&quot; IS NULL AND :original_신청시작 IS NULL)) AND ((&quot;신청종료&quot; = :original_신청종료) OR (&quot;신청종료&quot; IS NULL AND :original_신청종료 IS NULL))" InsertCommand="INSERT INTO &quot;A_강좌개설정보&quot; (&quot;강좌번호&quot;, &quot;학년도&quot;, &quot;학기&quot;, &quot;교과목명&quot;, &quot;튜터신청가능여부&quot;, &quot;신청가능학점&quot;, &quot;신청가능평점&quot;, &quot;교수ID&quot;, &quot;신청시작&quot;, &quot;신청종료&quot;) VALUES (:강좌번호, :학년도, :학기, :교과목명, :튜터신청가능여부, :신청가능학점, :신청가능평점, :교수ID, :신청시작, :신청종료)" OldValuesParameterFormatString="original_{0}" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM &quot;A_강좌개설정보&quot; ORDER BY &quot;학년도&quot; DESC, &quot;학기&quot; DESC" UpdateCommand="UPDATE &quot;A_강좌개설정보&quot; SET &quot;교과목명&quot; = :교과목명, &quot;튜터신청가능여부&quot; = :튜터신청가능여부, &quot;신청가능학점&quot; = :신청가능학점, &quot;신청가능평점&quot; = :신청가능평점, &quot;교수ID&quot; = :교수ID, &quot;신청시작&quot; = :신청시작, &quot;신청종료&quot; = :신청종료 WHERE &quot;강좌번호&quot; = :original_강좌번호 AND &quot;학년도&quot; = :original_학년도 AND &quot;학기&quot; = :original_학기 AND ((&quot;교과목명&quot; = :original_교과목명) OR (&quot;교과목명&quot; IS NULL AND :original_교과목명 IS NULL)) AND ((&quot;튜터신청가능여부&quot; = :original_튜터신청가능여부) OR (&quot;튜터신청가능여부&quot; IS NULL AND :original_튜터신청가능여부 IS NULL)) AND ((&quot;신청가능학점&quot; = :original_신청가능학점) OR (&quot;신청가능학점&quot; IS NULL AND :original_신청가능학점 IS NULL)) AND ((&quot;신청가능평점&quot; = :original_신청가능평점) OR (&quot;신청가능평점&quot; IS NULL AND :original_신청가능평점 IS NULL)) AND ((&quot;교수ID&quot; = :original_교수ID) OR (&quot;교수ID&quot; IS NULL AND :original_교수ID IS NULL)) AND ((&quot;신청시작&quot; = :original_신청시작) OR (&quot;신청시작&quot; IS NULL AND :original_신청시작 IS NULL)) AND ((&quot;신청종료&quot; = :original_신청종료) OR (&quot;신청종료&quot; IS NULL AND :original_신청종료 IS NULL))">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM &quot;A_강좌개설정보&quot; WHERE &quot;강좌번호&quot; = :original_강좌번호 AND &quot;학년도&quot; = :original_학년도 AND &quot;학기&quot; = :original_학기" InsertCommand="INSERT INTO &quot;A_강좌개설정보&quot; (&quot;강좌번호&quot;, &quot;학년도&quot;, &quot;학기&quot;, &quot;교과목명&quot;, &quot;튜터신청가능여부&quot;, &quot;신청가능학점&quot;, &quot;신청가능평점&quot;, &quot;교수ID&quot;, &quot;신청시작&quot;, &quot;신청종료&quot;) VALUES (:강좌번호, :학년도, :학기, :교과목명, :튜터신청가능여부, :신청가능학점, :신청가능평점, :교수ID, :신청시작, :신청종료)" OldValuesParameterFormatString="original_{0}" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM &quot;A_강좌개설정보&quot; ORDER BY &quot;학년도&quot; DESC, &quot;학기&quot; DESC" UpdateCommand="UPDATE &quot;A_강좌개설정보&quot; SET &quot;교과목명&quot; = :교과목명, &quot;튜터신청가능여부&quot; = :튜터신청가능여부, &quot;신청가능학점&quot; = :신청가능학점, &quot;신청가능평점&quot; = :신청가능평점, &quot;교수ID&quot; = :교수ID, &quot;신청시작&quot; = :신청시작, &quot;신청종료&quot; = :신청종료 WHERE &quot;강좌번호&quot; = :original_강좌번호 AND &quot;학년도&quot; = :original_학년도 AND &quot;학기&quot; = :original_학기">
         <DeleteParameters>
             <asp:Parameter Name="original_강좌번호" Type="String" />
             <asp:Parameter Name="original_학년도" Type="Decimal" />
             <asp:Parameter Name="original_학기" Type="Decimal" />
-            <asp:Parameter Name="original_교과목명" Type="String" />
-            <asp:Parameter Name="original_튜터신청가능여부" Type="Decimal" />
-            <asp:Parameter Name="original_신청가능학점" Type="Decimal" />
-            <asp:Parameter Name="original_신청가능평점" Type="Decimal" />
-            <asp:Parameter Name="original_교수ID" Type="Decimal" />
-            <asp:Parameter Name="original_신청시작" Type="DateTime" />
-            <asp:Parameter Name="original_신청종료" Type="DateTime" />
         </DeleteParameters>
         <InsertParameters>
             <asp:Parameter Name="강좌번호" Type="String" />
@@ -53,13 +46,6 @@
             <asp:Parameter Name="original_강좌번호" Type="String" />
             <asp:Parameter Name="original_학년도" Type="Decimal" />
             <asp:Parameter Name="original_학기" Type="Decimal" />
-            <asp:Parameter Name="original_교과목명" Type="String" />
-            <asp:Parameter Name="original_튜터신청가능여부" Type="Decimal" />
-            <asp:Parameter Name="original_신청가능학점" Type="Decimal" />
-            <asp:Parameter Name="original_신청가능평점" Type="Decimal" />
-            <asp:Parameter Name="original_교수ID" Type="Decimal" />
-            <asp:Parameter Name="original_신청시작" Type="DateTime" />
-            <asp:Parameter Name="original_신청종료" Type="DateTime" />
         </UpdateParameters>
     </asp:SqlDataSource>
 </asp:Content>

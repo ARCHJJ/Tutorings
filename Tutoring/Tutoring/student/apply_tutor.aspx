@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Height="253px" style="margin-bottom: 0px" Width="769px" DataKeyNames="강좌번호,학년도,학기">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Height="253px" style="margin-bottom: 0px" Width="1090px" DataKeyNames="강좌번호,학년도,학기" AllowPaging="True">
     <Columns>
         <asp:BoundField DataField="강좌번호" HeaderText="강좌번호" SortExpression="강좌번호" ReadOnly="True" />
         <asp:BoundField DataField="교과목명" HeaderText="교과목명" SortExpression="교과목명" />

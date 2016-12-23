@@ -1,0 +1,5 @@
+﻿body{background-color: rgba(230,230,230,0.9); background-image: url(background.jpg); background-size: 100% ;}
+
+#login{margin:10% 20% 0 30%; width: 600px; border: 1px solid black;  padding: 5% 0 5% 10%; background: rgba(245,245,245,0.7); }
+
+h1{text-align: center; margin-top: 100px;}

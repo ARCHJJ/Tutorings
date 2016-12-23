@@ -21,7 +21,8 @@
         <asp:ListItem>11</asp:ListItem>
         <asp:ListItem Selected="True">12</asp:ListItem>
     </asp:DropDownList>
-    월<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+    월
+    <hr /><asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
         <Columns>
             <asp:BoundField DataField="인덱스" HeaderText="인덱스" SortExpression="인덱스" />
             <asp:BoundField DataField="강좌명" HeaderText="강좌명" SortExpression="강좌명" />
